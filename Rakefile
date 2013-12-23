@@ -98,7 +98,7 @@ task :page do
 end # task :page
 
 desc "Compile haml to html"
-task :compile do
+task :haml do
     system "haml haml/about.haml ./about.html"
 end
 
