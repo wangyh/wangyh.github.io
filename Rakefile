@@ -97,6 +97,11 @@ task :page do
   end
 end # task :page
 
+desc "Compile haml to html"
+task :compile do
+    system "haml haml/about.haml ./about.html"
+end
+
 desc "Launch preview environment"
 task :preview do
   system "jekyll serve -w"
